@@ -1,0 +1,14 @@
+-rootPath
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part
+-cmake-output
+-output-file
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/qml_imports/appSPA_3Part_conf.cmake
+-importPath
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part
+-importPath
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug
+-importPath
+/home/soroush/Qt/6.7.2/gcc_64/./qml
+-qrcFiles
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_SPA_3Part.qrc
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc

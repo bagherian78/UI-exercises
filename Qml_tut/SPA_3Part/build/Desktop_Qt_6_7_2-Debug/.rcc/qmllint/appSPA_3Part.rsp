@@ -1,0 +1,10 @@
+--bare
+-I
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug
+-I
+/home/soroush/Qt/6.7.2/gcc_64/./qml
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_SPA_3Part.qrc
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml

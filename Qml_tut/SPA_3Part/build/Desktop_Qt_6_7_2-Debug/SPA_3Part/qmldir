@@ -1,0 +1,5 @@
+module SPA_3Part
+typeinfo appSPA_3Part.qmltypes
+prefer :/qt/qml/SPA_3Part/
+Main 1.0 Main.qml
+

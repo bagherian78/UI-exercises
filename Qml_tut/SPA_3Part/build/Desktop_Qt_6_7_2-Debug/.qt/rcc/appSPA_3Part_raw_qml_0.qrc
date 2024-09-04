@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/SPA_3Part/">
+    <file alias="Main.qml">/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml</file>
+    <file alias="resources.qrc">/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/resources.qrc</file>
+  </qresource>
+</RCC>
+

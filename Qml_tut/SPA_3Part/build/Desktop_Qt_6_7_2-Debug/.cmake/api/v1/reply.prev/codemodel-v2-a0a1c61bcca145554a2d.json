@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f7a568f441be20c34555.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SPA_3Part",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-ef91da8f58d084e91eb1.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-22f6ce5c3b02f80bfec8.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-22f520348c1215a96342.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-c89d178ec2ca06c91148.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part-Debug-197ba86a81fc10e02482.json",
+					"name" : "appSPA_3Part",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_autogen-Debug-11e11520929d1fd81208.json",
+					"name" : "appSPA_3Part_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_autogen_timestamp_deps-Debug-e284f08811fdbb9eebce.json",
+					"name" : "appSPA_3Part_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_qmlimportscan-Debug-22bad0bab4cbb892acea.json",
+					"name" : "appSPA_3Part_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_qmllint-Debug-feff9010d659944e160a.json",
+					"name" : "appSPA_3Part_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_qmllint_json-Debug-4592c37ef3c038182674.json",
+					"name" : "appSPA_3Part_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_qmllint_module-Debug-02cbd50aabfce3f64ef4.json",
+					"name" : "appSPA_3Part_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_qmltyperegistration-Debug-8d8f7b625f075b192b40.json",
+					"name" : "appSPA_3Part_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appSPA_3Part_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appSPA_3Part_tooling-Debug-6baa2715c12dc70c7264.json",
+					"name" : "appSPA_3Part_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug",
+		"source" : "/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
