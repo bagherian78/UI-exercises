@@ -1,0 +1,6 @@
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_custom_test.qrc
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appcustom_test_raw_qml_0.qrc
+/qt/qml/custom_test/Main.qml
+/qt/qml/custom_test/AdvancedBtn.qml

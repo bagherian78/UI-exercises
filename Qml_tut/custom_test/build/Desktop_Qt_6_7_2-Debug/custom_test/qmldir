@@ -1,0 +1,6 @@
+module custom_test
+typeinfo appcustom_test.qmltypes
+prefer :/qt/qml/custom_test/
+Main 1.0 Main.qml
+AdvancedBtn 1.0 AdvancedBtn.qml
+

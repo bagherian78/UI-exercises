@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appcustom_test_FILE /home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/appcustom_test)
+set(__QT_DEPLOY_TARGET_appcustom_test_TYPE EXECUTABLE)

@@ -1,0 +1,11 @@
+--bare
+-I
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug
+-I
+/home/soroush/Qt/6.7.2/gcc_64/./qml
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_custom_test.qrc
+--resource
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appcustom_test_raw_qml_0.qrc
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/Main.qml
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/AdvancedBtn.qml

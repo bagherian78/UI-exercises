@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/custom_test/">
+    <file alias="Main.qml">/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/Main.qml</file>
+    <file alias="AdvancedBtn.qml">/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/AdvancedBtn.qml</file>
+  </qresource>
+</RCC>
+

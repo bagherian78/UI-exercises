@@ -1,0 +1,14 @@
+-rootPath
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test
+-cmake-output
+-output-file
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/qml_imports/appcustom_test_conf.cmake
+-importPath
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/custom_test
+-importPath
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug
+-importPath
+/home/soroush/Qt/6.7.2/gcc_64/./qml
+-qrcFiles
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_custom_test.qrc
+/home/soroush/Desktop/MyWorks/Qml_tut/custom_test/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appcustom_test_raw_qml_0.qrc
