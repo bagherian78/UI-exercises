@@ -1,5 +1,5 @@
-CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o: \
- /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp \
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o: \
+ /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp \
  /usr/include/stdc-predef.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtQml/qqmlprivate.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtQml/qjsprimitivevalue.h \
@@ -350,7 +350,6 @@ CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3P
  /home/soroush/Qt/6.7.2/gcc_64/include/QtCore/qurl.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtCore/qversionnumber.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtCore/qtyperevision.h \
- /home/soroush/Qt/6.7.2/gcc_64/include/QtCore/qloggingcategory.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtCore/qtimezone.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtQml/qjsengine.h \
  /home/soroush/Qt/6.7.2/gcc_64/include/QtQml/qjsmanagedvalue.h \

@@ -68,6 +68,7 @@ include CMakeFiles/appSPA_3Part_qmllint_json.dir/progress.make
 
 CMakeFiles/appSPA_3Part_qmllint_json: /home/soroush/Qt/6.7.2/gcc_64/bin/qmllint
 CMakeFiles/appSPA_3Part_qmllint_json: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
+CMakeFiles/appSPA_3Part_qmllint_json: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
 CMakeFiles/appSPA_3Part_qmllint_json: .rcc/qmllint/appSPA_3Part_json.rsp
 	cd /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part && /home/soroush/Qt/6.7.2/gcc_64/bin/qmllint @/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmllint/appSPA_3Part_json.rsp
 

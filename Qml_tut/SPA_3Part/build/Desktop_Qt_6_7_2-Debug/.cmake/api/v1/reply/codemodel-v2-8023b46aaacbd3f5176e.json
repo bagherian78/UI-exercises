@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-18d456de92bc3ae41be5.json",
+					"jsonFile" : "directory-.-Debug-10b39b93f6dafdea0774.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -92,7 +92,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appSPA_3Part::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appSPA_3Part-Debug-70e09a2f4a16cb85a21d.json",
+					"jsonFile" : "target-appSPA_3Part-Debug-3f9434bbc18ac9e195d3.json",
 					"name" : "appSPA_3Part",
 					"projectIndex" : 0
 				},
@@ -148,7 +148,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appSPA_3Part_tooling::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appSPA_3Part_tooling-Debug-3fe3cb7a9f06986b4455.json",
+					"jsonFile" : "target-appSPA_3Part_tooling-Debug-ee3cec1caa7ebcbaa055.json",
 					"name" : "appSPA_3Part_tooling",
 					"projectIndex" : 0
 				}

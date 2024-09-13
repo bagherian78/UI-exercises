@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   ".qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp"
   ".qt/rcc/qrc_qmake_SPA_3Part.cpp"
+  ".rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp"
   ".rcc/qmlcache/appSPA_3Part_Main_qml.cpp"
   ".rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp"
   "CMakeFiles/appSPA_3Part_autogen.dir/AutogenUsed.txt"
@@ -14,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o.d"
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o"
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o.d"
+  "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o"
+  "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o.d"
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o"
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o.d"
   "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o"

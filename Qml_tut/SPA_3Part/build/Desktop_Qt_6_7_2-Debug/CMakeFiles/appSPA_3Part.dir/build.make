@@ -117,32 +117,43 @@ SPA_3Part/appSPA_3Part.qmltypes: appspa_3part_qmltyperegistrations.cpp
 	/home/soroush/Qt/Tools/CMake/bin/cmake -E make_directory /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache
 	/home/soroush/Qt/6.7.2/gcc_64/libexec/qmlcachegen --bare --resource-path /qt/qml/SPA_3Part/Main.qml -I /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug -I /home/soroush/Qt/6.7.2/gcc_64/./qml -i /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/qmldir --resource /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_SPA_3Part.qrc --resource /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc -o /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
 
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: /home/soroush/Qt/6.7.2/gcc_64/libexec/qmlcachegen
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: .qt/rcc/qmake_SPA_3Part.qrc
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: .qt/rcc/appSPA_3Part_raw_qml_0.qrc
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: SPA_3Part/appSPA_3Part.qmltypes
+.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp: SPA_3Part/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp"
+	/home/soroush/Qt/Tools/CMake/bin/cmake -E make_directory /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache
+	/home/soroush/Qt/6.7.2/gcc_64/libexec/qmlcachegen --bare --resource-path /qt/qml/SPA_3Part/BannerItem.qml -I /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug -I /home/soroush/Qt/6.7.2/gcc_64/./qml -i /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/qmldir --resource /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_SPA_3Part.qrc --resource /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc -o /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
+
 .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
+.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
 .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/resources.qrc
 .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp: .qt/rcc/appSPA_3Part_raw_qml_0.qrc
 .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp: /home/soroush/Qt/6.7.2/gcc_64/./libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running rcc for resource appSPA_3Part_raw_qml_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running rcc for resource appSPA_3Part_raw_qml_0"
 	/home/soroush/Qt/6.7.2/gcc_64/libexec/rcc --output /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp --name appSPA_3Part_raw_qml_0 /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc --no-zstd
 
 appSPA_3Part_autogen/timestamp: /home/soroush/Qt/6.7.2/gcc_64/./libexec/moc
 appSPA_3Part_autogen/timestamp: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Automatic MOC and UIC for target appSPA_3Part"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Automatic MOC and UIC for target appSPA_3Part"
 	/home/soroush/Qt/Tools/CMake/bin/cmake -E cmake_autogen /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/appSPA_3Part_autogen.dir/AutogenInfo.json Debug
 	/home/soroush/Qt/Tools/CMake/bin/cmake -E touch /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/appSPA_3Part_autogen/timestamp
 
 meta_types/appSPA_3Part_json_file_list.txt: /home/soroush/Qt/6.7.2/gcc_64/./libexec/cmake_automoc_parser
 meta_types/appSPA_3Part_json_file_list.txt: appSPA_3Part_autogen/timestamp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running AUTOMOC file extraction for target appSPA_3Part"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running AUTOMOC file extraction for target appSPA_3Part"
 	/home/soroush/Qt/6.7.2/gcc_64/libexec/cmake_automoc_parser --cmake-autogen-cache-file /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/appSPA_3Part_autogen.dir/ParseCache.txt --cmake-autogen-info-file /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/appSPA_3Part_autogen.dir/AutogenInfo.json --output-file-path /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/meta_types/appSPA_3Part_json_file_list.txt --timestamp-file-path /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/meta_types/appSPA_3Part_json_file_list.txt.timestamp --cmake-autogen-include-dir-path /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/appSPA_3Part_autogen/include
 
 meta_types/qt6appspa_3part_debug_metatypes.json: meta_types/qt6appspa_3part_debug_metatypes.json.gen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating meta_types/qt6appspa_3part_debug_metatypes.json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating meta_types/qt6appspa_3part_debug_metatypes.json"
 	/home/soroush/Qt/Tools/CMake/bin/cmake -E true
 
 CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o: appSPA_3Part_autogen/mocs_compilation.cpp
 CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o -MF CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/appSPA_3Part_autogen/mocs_compilation.cpp
 
 CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.i: cmake_force
@@ -156,7 +167,7 @@ CMakeFiles/appSPA_3Part.dir/appSPA_3Part_autogen/mocs_compilation.cpp.s: cmake_f
 CMakeFiles/appSPA_3Part.dir/main.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/main.cpp.o: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/main.cpp
 CMakeFiles/appSPA_3Part.dir/main.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/appSPA_3Part.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appSPA_3Part.dir/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/main.cpp.o -MF CMakeFiles/appSPA_3Part.dir/main.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/main.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/main.cpp
 
 CMakeFiles/appSPA_3Part.dir/main.cpp.i: cmake_force
@@ -170,7 +181,7 @@ CMakeFiles/appSPA_3Part.dir/main.cpp.s: cmake_force
 CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o: appspa_3part_qmltyperegistrations.cpp
 CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o -MF CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/appspa_3part_qmltyperegistrations.cpp
 
 CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.i: cmake_force
@@ -184,7 +195,7 @@ CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.s: cmake_force
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o: .qt/rcc/qrc_qmake_SPA_3Part.cpp
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o -MF CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp
 
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.i: cmake_force
@@ -198,7 +209,7 @@ CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o: .rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o -MF CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp
 
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.i: cmake_force
@@ -212,7 +223,7 @@ CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3P
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o: .rcc/qmlcache/appSPA_3Part_Main_qml.cpp
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o -MF CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp
 
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.i: cmake_force
@@ -223,10 +234,24 @@ CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3P
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.s
 
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o: .rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o -MF CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp
+
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp > CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.i
+
+CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.s
+
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o: CMakeFiles/appSPA_3Part.dir/flags.make
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o: .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o: CMakeFiles/appSPA_3Part.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o -MF CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o.d -o CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o -c /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp
 
 CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.i: cmake_force
@@ -245,6 +270,7 @@ appSPA_3Part_OBJECTS = \
 "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o" \
 "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o" \
 "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o" \
+"CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o" \
 "CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o"
 
 # External object files for target appSPA_3Part
@@ -256,6 +282,7 @@ appSPA_3Part: CMakeFiles/appSPA_3Part.dir/appspa_3part_qmltyperegistrations.cpp.
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_qmake_SPA_3Part.cpp.o
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp.o
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.o
+appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.o
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp.o
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/build.make
 appSPA_3Part: /home/soroush/Qt/6.7.2/gcc_64/lib/libQt6Quick.so.6.7.2
@@ -269,7 +296,7 @@ appSPA_3Part: /home/soroush/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2
 appSPA_3Part: /usr/lib/x86_64-linux-gnu/libGLX.so
 appSPA_3Part: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 appSPA_3Part: CMakeFiles/appSPA_3Part.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable appSPA_3Part"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable appSPA_3Part"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appSPA_3Part.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -282,6 +309,7 @@ CMakeFiles/appSPA_3Part.dir/clean:
 
 CMakeFiles/appSPA_3Part.dir/depend: .qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp
 CMakeFiles/appSPA_3Part.dir/depend: .qt/rcc/qrc_qmake_SPA_3Part.cpp
+CMakeFiles/appSPA_3Part.dir/depend: .rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp
 CMakeFiles/appSPA_3Part.dir/depend: .rcc/qmlcache/appSPA_3Part_Main_qml.cpp
 CMakeFiles/appSPA_3Part.dir/depend: .rcc/qmlcache/appSPA_3Part_qmlcache_loader.cpp
 CMakeFiles/appSPA_3Part.dir/depend: SPA_3Part/appSPA_3Part.qmltypes

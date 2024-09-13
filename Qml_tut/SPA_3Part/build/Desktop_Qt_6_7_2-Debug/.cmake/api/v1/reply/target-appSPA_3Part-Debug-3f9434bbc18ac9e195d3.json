@@ -101,13 +101,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 40,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 35,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
@@ -560,6 +560,18 @@
 				"parent" : 65
 			},
 			{
+				"command" : 24,
+				"file" : 5,
+				"line" : 2535,
+				"parent" : 65
+			},
+			{
+				"command" : 24,
+				"file" : 5,
+				"line" : 2687,
+				"parent" : 65
+			},
+			{
 				"command" : 28,
 				"file" : 5,
 				"line" : 2770,
@@ -569,19 +581,19 @@
 				"command" : 27,
 				"file" : 0,
 				"line" : 337,
-				"parent" : 88
+				"parent" : 90
 			},
 			{
 				"command" : 26,
 				"file" : 0,
 				"line" : 2390,
-				"parent" : 89
+				"parent" : 91
 			},
 			{
 				"command" : 24,
 				"file" : 0,
 				"line" : 2004,
-				"parent" : 90
+				"parent" : 92
 			},
 			{
 				"command" : 30,
@@ -593,7 +605,7 @@
 				"command" : 24,
 				"file" : 0,
 				"line" : 2117,
-				"parent" : 92
+				"parent" : 94
 			}
 		]
 	},
@@ -766,7 +778,8 @@
 				4,
 				6,
 				7,
-				8
+				9,
+				10
 			]
 		}
 	],
@@ -891,15 +904,15 @@
 			"sourceIndexes" : 
 			[
 				0,
-				13,
-				23,
-				24,
-				25,
+				15,
 				26,
 				27,
 				28,
 				29,
-				30
+				30,
+				31,
+				32,
+				33
 			]
 		},
 		{
@@ -911,7 +924,8 @@
 				4,
 				6,
 				7,
-				8
+				9,
+				10
 			]
 		},
 		{
@@ -920,25 +934,27 @@
 			[
 				2,
 				5,
-				9,
-				10,
+				8,
 				11,
-				12
+				12,
+				13,
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14,
-				15,
 				16,
 				17,
 				18,
 				19,
 				20,
 				21,
-				22
+				22,
+				23,
+				24,
+				25
 			]
 		}
 	],
@@ -997,32 +1013,44 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 91,
+			"backtrace" : 88,
+			"path" : "BannerItem.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 93,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qrc_appSPA_3Part_raw_qml_0.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 93,
+			"backtrace" : 95,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/.qt/rcc/qmake_SPA_3Part.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 93,
+			"backtrace" : 95,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/SPA_3Part/qmldir",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 93,
+			"backtrace" : 95,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 93,
+			"backtrace" : 95,
 			"path" : "resources.qrc",
 			"sourceGroupIndex" : 2
 		},
@@ -1060,6 +1088,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_Main_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/.rcc/qmlcache/appSPA_3Part_BannerItem_qml.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{

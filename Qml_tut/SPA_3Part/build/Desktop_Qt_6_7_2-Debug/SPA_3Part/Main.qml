@@ -9,6 +9,7 @@ Window {
     property string backgroundColor: "#E9EFEC"
     property string firstColor: "#C4DAD2"
     property string secondColor: "#6c9c95"
+
     Rectangle{
         height: parent.height
         width: parent.width
@@ -25,30 +26,26 @@ Window {
                 width: containerID.width
                 height: (containerID.height/3.2)
                 spacing: 10
-                Rectangle{
-                    width: (firstRowID.width*1/4.1)
-                    height: firstRowID.height
-                    color: firstColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+                BannerItem{
+                    bannerWidth: (firstRowID.width*1/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: firstColor
+                    bannerText: "Home"
+                    onBannerClick:{
+                        console.log("1");
                     }
                 }
-                Rectangle{
-                    width: (firstRowID.width*3/4.1)
-                    height: firstRowID.height
-                    color: secondColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+
+                BannerItem{
+                    bannerWidth: (firstRowID.width*3/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: secondColor
+                    bannerText: "Controller"
+                    onBannerClick:{
+                        console.log("2");
                     }
                 }
+
             }
 
             Row{
@@ -56,28 +53,23 @@ Window {
                 width: containerID.width
                 height: (containerID.height/3.2)
                 spacing: 10
-                Rectangle{
-                    width: (firstRowID.width*3/4.1)
-                    height: firstRowID.height
-                    color: secondColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+                BannerItem{
+                    bannerWidth: (firstRowID.width*3/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: secondColor
+                    bannerText: "Gallery"
+                    onBannerClick:{
+                        console.log("3");
                     }
                 }
-                Rectangle{
-                    width: (firstRowID.width*1/4.1)
-                    height: firstRowID.height
-                    color: firstColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+
+                BannerItem{
+                    bannerWidth: (firstRowID.width*1/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: firstColor
+                    bannerText: "Stream"
+                    onBannerClick:{
+                        console.log("4");
                     }
                 }
             }
@@ -87,28 +79,23 @@ Window {
                 width: containerID.width
                 height: (containerID.height/3.2)
                 spacing: 10
-                Rectangle{
-                    width: (firstRowID.width*1/4.1)
-                    height: firstRowID.height
-                    color: firstColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+                BannerItem{
+                    bannerWidth: (firstRowID.width*1/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: firstColor
+                    bannerText: "About us"
+                    onBannerClick:{
+                        console.log("5");
                     }
                 }
-                Rectangle{
-                    width: (firstRowID.width*3/4.1)
-                    height: firstRowID.height
-                    color: secondColor
-                    Text {
-                        text: qsTr("Test1")
-                        anchors.bottom: parent.bottom
-                        bottomPadding: 5
-                        leftPadding: 5
-                        font.bold: true
+
+                BannerItem{
+                    bannerWidth: (firstRowID.width*3/4.1)
+                    bannerHeight: firstRowID.height
+                    bannerColor: secondColor
+                    bannerText: "contact us"
+                    onBannerClick:{
+                        console.log("6");
                     }
                 }
             }

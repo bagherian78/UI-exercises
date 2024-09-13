@@ -72,6 +72,7 @@ CMakeFiles/appSPA_3Part_qmlimportscan: .qt/qml_imports/appSPA_3Part_build.cmake
 .qt/qml_imports/appSPA_3Part_build.cmake: .qt/rcc/qmake_SPA_3Part.qrc
 .qt/qml_imports/appSPA_3Part_build.cmake: .qt/rcc/appSPA_3Part_raw_qml_0.qrc
 .qt/qml_imports/appSPA_3Part_build.cmake: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
+.qt/qml_imports/appSPA_3Part_build.cmake: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for appSPA_3Part"
 	cd /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part && /home/soroush/Qt/6.7.2/gcc_64/libexec/qmlimportscanner @/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/qml_imports/appSPA_3Part_build.rsp
 

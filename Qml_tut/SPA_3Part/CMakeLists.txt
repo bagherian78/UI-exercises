@@ -19,6 +19,8 @@ qt_add_qml_module(appSPA_3Part
     QML_FILES
         Main.qml
         RESOURCES resources.qrc
+        QML_FILES
+        QML_FILES BannerItem.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

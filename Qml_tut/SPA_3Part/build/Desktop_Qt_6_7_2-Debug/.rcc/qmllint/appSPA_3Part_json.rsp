@@ -8,5 +8,6 @@
 --resource
 /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc
 /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
+/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
 --json
 /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/appSPA_3Part_qmllint.json

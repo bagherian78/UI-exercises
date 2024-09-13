@@ -3,3 +3,4 @@
 --resource
 /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/.qt/rcc/appSPA_3Part_raw_qml_0.qrc
 /qt/qml/SPA_3Part/Main.qml
+/qt/qml/SPA_3Part/BannerItem.qml

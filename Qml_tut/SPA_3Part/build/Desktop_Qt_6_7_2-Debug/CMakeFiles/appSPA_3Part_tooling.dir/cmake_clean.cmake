@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "SPA_3Part/BannerItem.qml"
   "SPA_3Part/Main.qml"
   "SPA_3Part/resources.qrc"
 )

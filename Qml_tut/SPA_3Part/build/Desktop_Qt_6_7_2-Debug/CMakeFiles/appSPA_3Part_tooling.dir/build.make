@@ -70,10 +70,15 @@ SPA_3Part/Main.qml: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying Main.qml to /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/Main.qml"
 	cd /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part && /home/soroush/Qt/Tools/CMake/bin/cmake -E copy /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/Main.qml /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/Main.qml
 
+SPA_3Part/BannerItem.qml: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Copying BannerItem.qml to /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/BannerItem.qml"
+	cd /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part && /home/soroush/Qt/Tools/CMake/bin/cmake -E copy /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/BannerItem.qml /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/BannerItem.qml
+
 SPA_3Part/resources.qrc: /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/resources.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Copying resources.qrc to /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/resources.qrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Copying resources.qrc to /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/resources.qrc"
 	cd /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part && /home/soroush/Qt/Tools/CMake/bin/cmake -E copy /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/resources.qrc /home/soroush/Desktop/MyWorks/Qml_tut/SPA_3Part/build/Desktop_Qt_6_7_2-Debug/SPA_3Part/resources.qrc
 
+appSPA_3Part_tooling: SPA_3Part/BannerItem.qml
 appSPA_3Part_tooling: SPA_3Part/Main.qml
 appSPA_3Part_tooling: SPA_3Part/resources.qrc
 appSPA_3Part_tooling: CMakeFiles/appSPA_3Part_tooling.dir/build.make

@@ -23,7 +23,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 15,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -70,15 +70,17 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				2,
-				3
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -93,6 +95,12 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/SPA_3Part/BannerItem.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/SPA_3Part/resources.qrc",
 			"sourceGroupIndex" : 0
 		},
@@ -100,6 +108,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2-Debug/SPA_3Part/Main.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2-Debug/SPA_3Part/BannerItem.qml.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
