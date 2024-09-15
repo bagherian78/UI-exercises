@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Assets/cross_white.png</file>
+        <file>Assets/hide_white.png</file>
+        <file>Assets/maximize_white.png</file>
+        <file>Assets/mimimize_white.png</file>
+    </qresource>
+</RCC>
