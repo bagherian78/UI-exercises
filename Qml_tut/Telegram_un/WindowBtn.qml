@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Controls 2.15
 
 Item {
     id: windowBtn
@@ -16,12 +17,13 @@ Item {
         color: "transparent"
 
 
-        Image{
+        IconImage{
             id: image
             anchors.fill: parent
             width: 30
             height:30
             source: ""
+            color: "black"
         }
 
         MouseArea{
