@@ -22,6 +22,7 @@ qt_add_qml_module(appTelegram_un
         menuBtn.qml
 
     RESOURCES images.qrc
+    QML_FILES DialogItem.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

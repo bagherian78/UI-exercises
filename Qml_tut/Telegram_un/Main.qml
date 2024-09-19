@@ -1,13 +1,17 @@
 import QtQuick
 import QtQuick.Controls 2.15
+import QtQuick.Layouts
 
 Window {
     id: appWindow
     width: 640
     height: 480
     visible: true
+    property alias listView: listView
     title: qsTr("Telegram")
     flags: Qt.FramelessWindowHint
+
+    property bool compactMode: appWindow.width > 500
 
 
     Rectangle{
@@ -65,7 +69,7 @@ Window {
     Rectangle{
         id: sideBar
         color: "#1f2940"
-        width: parent.width <= 640 ? (parent.width / 10) : (parent.width / 20)
+        width: appWindow.width <= 800 ? (appWindow.width / 10) :(appWindow.width / 20)
         anchors{
             top: actionbar.bottom
             left: parent.left
@@ -195,6 +199,7 @@ Window {
         }
     }
 
+
     SplitView{
         id: splitView
         opacity: 1
@@ -208,10 +213,9 @@ Window {
         }
 
         Row{
-            topPadding: Math.min(width, height) <=640? 5:0
-            SplitView.preferredWidth: (Math.min(appWindow.width, appWindow.height) <= 640)?2*(splitView.width)/4:(splitView.width)/4
-            SplitView.minimumWidth: 100
-            SplitView.maximumWidth: (splitView.width)/2
+            SplitView.preferredWidth: (appWindow.width<=640)? 300:450
+            SplitView.fillHeight: true
+            visible: ~compactMode
 
             Rectangle{
 
@@ -272,13 +276,70 @@ Window {
             }
 
             Rectangle{
+                anchors{
+                    top: topMenuS.bottom
+                    bottom: parent.bottom
+                    right: parent.right
+                    left: parent.left
+                }
+                Column{
+                    id: listView
+                    height: parent.height
+                    width: parent.width
+                    anchors.fill: parent
 
+                    Rectangle{
+                        width: parent.width
+                        height: fChat.itemHeight
+
+                        DialogItem{
+                            id: fChat
+                            itemHeight: 80
+                            itemwidth: parent.width
+                            displayName: "ali"
+                            lastMesageDateTime: "15:18"
+                            lastMessageType:"text"
+                            lastMsgText: "Hey there! what's up?"
+                        }
+                    }
+
+                    Rectangle{
+                        height: fChat.itemHeight
+                        width: parent.width
+
+                        DialogItem{
+                            id: sChat
+                            itemHeight: 80
+                            itemwidth: parent.width
+                            displayName: "Mitra"
+                            lastMesageDateTime: "15:22"
+                            lastMessageType:"text"
+                            lastMsgText: "Hello"
+                        }
+                    }
+                    Rectangle{
+                        height: fChat.itemHeight
+                        width: parent.width
+
+                        DialogItem{
+                            id: thChat
+                            itemHeight: 80
+                            itemwidth: parent.width
+                            displayName: "akbar"
+                            lastMesageDateTime: "15:48"
+                            lastMessageType:"text"
+                            lastMsgText: "Hello"
+                        }
+                    }
+                }
             }
         }
 
         Rectangle{
             color: "blue"
-            SplitView.preferredWidth: (Math.min(appWindow.width, appWindow.height) > 640)?(splitView.width)/4:(splitView.width)/3
+            SplitView.fillWidth: true
+            SplitView.fillHeight: true
+            visible: compactMode
 
         }
     }
