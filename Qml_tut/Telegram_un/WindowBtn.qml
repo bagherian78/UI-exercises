@@ -23,7 +23,7 @@ Item {
             width: 30
             height:30
             source: ""
-            color: "black"
+            color: "purple"
         }
 
         MouseArea{

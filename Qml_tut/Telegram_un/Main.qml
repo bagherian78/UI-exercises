@@ -9,7 +9,7 @@ Window {
     visible: true
     property alias listView: listView
     title: qsTr("Telegram")
-    flags: Qt.FramelessWindowHint
+    //flags: Qt.FramelessWindowHint
 
     property bool compactMode: appWindow.width > 500
 
@@ -32,7 +32,7 @@ Window {
                 top: parent.top
                 right: parent.right
             }
-            imageUrl: "qrc:/images/cross_white.png";
+            imageUrl: "qrc:/images/close-svgrepo-com.svg";
             onClicked: Qt.quit()
         }
 
@@ -43,7 +43,7 @@ Window {
                 right: closeBtn.right
                 rightMargin: 30
             }
-            imageUrl: "qrc:/images/mimimize_white.png";
+            imageUrl: "qrc:/images/minimize-svgrepo-com.svg";
             onClicked:{
 
                 if (appWindow.visibility === Window.Maximized) {
@@ -61,7 +61,7 @@ Window {
                 right: maximizeBtn.right
                 rightMargin: 30
             }
-            imageUrl: "qrc:/images/minimize-screen.svg";
+            imageUrl: "qrc:/images/minus-svgrepo-com.svg";
             onClicked: {appWindow.visibility = Window.Minimized;}
         }
     }
@@ -86,15 +86,14 @@ Window {
                 color:"transparent"
                 width: parent.width
                 height: menu_unread.height
-                IconImage {
+                WindowBtn {
                     id: menu_unread
                     width: 40
                     height: 40
-                    color: "white"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
-                    source: "qrc:/images/Hamburger_icon.png"
+                    imageUrl: "qrc:/images/hamburger-menu-svgrepo-com.svg"
                 }
 
             }
@@ -111,7 +110,7 @@ Window {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
-                    source: "qrc:/images/folders_all@3x.png"
+                    source: "qrc:/images/folder-svgrepo-com.svg"
                 }
                 Text {
                     id: menuItemS1
@@ -135,7 +134,7 @@ Window {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
-                    source: "qrc:/images/folders@3x.png"
+                    source: "qrc:/images/message-square-list-svgrepo-com.svg"
                 }
                 Text {
                     id: menuItemS3
@@ -159,7 +158,7 @@ Window {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
-                    source: "qrc:/images/folders_unread@3x.png"
+                    source: "qrc:/images/message-square-list-svgrepo-com.svg"
                 }
                 Text {
                     id: menuItemS4
@@ -183,7 +182,7 @@ Window {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
-                    source: "qrc:/images/folders_edit@3x.png"
+                    source: "qrc:/images/edit-svgrepo-com.svg"
                 }
                 Text {
                     id: menuItemS5
@@ -212,8 +211,23 @@ Window {
             bottom: parent.bottom
         }
 
+        handle: Rectangle {
+            id: handleDelegate
+            implicitWidth: 2
+            implicitHeight: 4
+            color: SplitHandle.pressed ? "#888"
+                : (SplitHandle.hovered ? Qt.lighter("#888", 1.2) : "black")
+
+            containmentMask: Item {
+                x: (handleDelegate.width - width) / 2
+                width: 30
+                height: splitView.height
+            }
+        }
+
+
         Row{
-            SplitView.preferredWidth: (appWindow.width<=640)? 300:450
+            SplitView.preferredWidth: Math.floor(appWindow.width/3)
             SplitView.fillHeight: true
             visible: ~compactMode
 
@@ -226,12 +240,11 @@ Window {
 
                 Rectangle {
                     id: rectangle
-                    x: 0
-                    y: 0
                     width: parent.width - 15
                     height: parent.height - 10
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
+                    //Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                     color: "transparent"
                     radius: Math.min(width, height)*10
                     border.width: 1
@@ -270,7 +283,7 @@ Window {
                             bottom: parent.bottom
                             rightMargin: 10
                         }
-                        source: "qrc:/images/info_search@3x.png"
+                        source: "qrc:/images/search-alt-2-svgrepo-com.svg"
                     }
                 }
             }
@@ -325,23 +338,97 @@ Window {
                             id: thChat
                             itemHeight: 80
                             itemwidth: parent.width
-                            displayName: "akbar"
+                            displayName: "Farhad"
                             lastMesageDateTime: "15:48"
                             lastMessageType:"text"
-                            lastMsgText: "Hello"
+                            lastMsgText: "Hey u, what's up"
                         }
                     }
                 }
             }
         }
 
-        Rectangle{
-            color: "blue"
+        ColumnLayout{
+            id:messageDialog
+            SplitView.preferredWidth: Math.floor(2*appWindow.width/3)
             SplitView.fillWidth: true
             SplitView.fillHeight: true
             visible: compactMode
+            z: 1
+
+            MessageBar{
+                id: msgBar
+                itemHeight: 68
+                itemWidth: parent.width
+                isCompactMode: true
+                Layout.fillWidth: true
+                displayName: "Mohammad Ali"
+            }
+
+            Rectangle{
+                width: parent.width
+                color: "#c2ce8b"
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                //height: element.implicitHeight
+                ListModel {
+                    id: chatModel
+                    ListElement { mtext: "Hey"; user: "A" }
+                    ListElement { mtext: "have you heard about nanotechnology?"; user: "A" }
+                    ListElement { mtext: "Yeah, it's amazing how small-scale tech can make such a big impact!"; user: "B" }
+                    ListElement { mtext: "Exactly! It's all about manipulating matter at the atomic or molecular level."; user: "A" }
+                    ListElement { mtext: "Right, and it has applications in medicine, electronics, and even energy."; user: "B" }
+                    ListElement { mtext: "I read they're using nanoparticles for targeted drug delivery."; user: "A" }
+                    ListElement { mtext: "That’s huge for treating diseases more effectively, like cancer."; user: "B" }
+                    ListElement { mtext: "Imagine minimizing side effects by delivering drugs precisely where they’re needed."; user: "A" }
+                    ListElement { mtext: "Yeah, and it's not just medicine, nanotech could revolutionize solar panels too!"; user: "B" }
+                    ListElement { mtext: "Right! More efficient energy capture and storage at a nano-scale. It's the future."; user: "A" }
+                    ListElement { mtext: "Definitely! We’re just scratching the surface of its potential."; user: "B" }
+                }
+                Component {
+                    id: fruitDelegate
+                    RowLayout {
+                        width: parent.width
+
+                        Rectangle {
+                            width: 0.7 * parent.width
+                            implicitHeight: msgHolder.height + 20
+                            radius: 5
+                            color: user == "A" ? "#FFF" : "#effdde"
+                            Layout.alignment: user == "A" ? Qt.AlignLeft : Qt.AlignRight  // Align left for "A", right for others
+
+                            Text {
+                                id: msgHolder
+                                text: mtext
+                                width: parent.width
+                                wrapMode:Text.WrapAnywhere
+                            }
+                        }
+                    }
+                }
+
+                ListView {
+                    anchors.fill: parent
+                    model: chatModel
+                    delegate: fruitDelegate
+                    spacing: 10
+                }
+
+            }
+
+            MessageEditor{
+                id: msgEditor
+                itemHeight: 60
+                itemWidth: parent.width
+                Layout.fillWidth: true
+                Layout.fillHeight: false
+                Layout.alignment: Qt.AlignBottom
+            }
+
+
 
         }
+
     }
 
 }

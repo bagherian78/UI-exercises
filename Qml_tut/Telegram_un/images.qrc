@@ -1,15 +1,21 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/cross_white.png</file>
-        <file>images/hide_white.png</file>
-        <file>images/maximize_white.png</file>
-        <file>images/mimimize_white.png</file>
-        <file>images/minimize-screen.svg</file>
-        <file>images/folders@3x.png</file>
-        <file>images/folders_edit@3x.png</file>
-        <file>images/Hamburger_icon.png</file>
-        <file>images/folders_all@3x.png</file>
-        <file>images/folders_unread@3x.png</file>
-        <file>images/info_search@3x.png</file>
+        <file>images/attach-svgrepo-com.svg</file>
+        <file>images/back-svgrepo-com.svg</file>
+        <file>images/chat-round-unread-svgrepo-com.svg</file>
+        <file>images/close-svgrepo-com.svg</file>
+        <file>images/dots-vertical-svgrepo-com.svg</file>
+        <file>images/edit-svgrepo-com.svg</file>
+        <file>images/emoji-funny-circle-svgrepo-com.svg</file>
+        <file>images/folder-svgrepo-com.svg</file>
+        <file>images/message-square-list-svgrepo-com.svg</file>
+        <file>images/minimize-svgrepo-com.svg</file>
+        <file>images/minus-svgrepo-com.svg</file>
+        <file>images/panel-right-svgrepo-com.svg</file>
+        <file>images/search-alt-2-svgrepo-com.svg</file>
+        <file>images/user-svgrepo-com.svg</file>
+        <file>images/voice-fill-svgrepo-com.svg</file>
+        <file>images/call-192-svgrepo-com.svg</file>
+        <file>images/hamburger-menu-svgrepo-com.svg</file>
     </qresource>
 </RCC>

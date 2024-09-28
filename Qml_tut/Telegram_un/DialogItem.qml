@@ -62,7 +62,7 @@ Item {
                 id: chatTypeIcon
                 height: userName.implicitHeight
                 width: height
-                source: "qrc:/images/folders_unread@3x.png"
+                source: "qrc:/images/user-svgrepo-com.svg"
             }
 
             Text {
