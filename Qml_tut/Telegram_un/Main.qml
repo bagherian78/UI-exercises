@@ -75,11 +75,11 @@ Window {
         color: "#1f2940"
         ListModel {
             id: menuList
-            ListElement { mlableName: ""; mimageUrl: "qrc:/images/hamburger-menu-svgrepo-com.svg" }
-            ListElement { mlableName: "All chats"; mimageUrl: "qrc:/images/folder-svgrepo-com.svg" }
-            ListElement { mlableName: "Private"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg" }
-            ListElement { mlableName: "Unread"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg" }
-            ListElement { mlableName: "Edit"; mimageUrl: "qrc:/images/edit-svgrepo-com.svg" }
+            ListElement { mlableName: ""; mimageUrl: "qrc:/images/hamburger-menu-svgrepo-com.svg";mfunction:()=>console.log("Menu") }
+            ListElement { mlableName: "All chats"; mimageUrl: "qrc:/images/folder-svgrepo-com.svg";mfunction:()=>console.log("All chats Clicked") }
+            ListElement { mlableName: "Private"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg";mfunction:()=>console.log("Private Clicked") }
+            ListElement { mlableName: "Unread"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg";mfunction:()=>console.log("Unread Clicked") }
+            ListElement { mlableName: "Edit"; mimageUrl: "qrc:/images/edit-svgrepo-com.svg";mfunction:()=>modalWindow.open() }
         }
 
         ListView {
@@ -96,6 +96,7 @@ Window {
                 lableName: mlableName  // Corrected from lableName to labelName
                 hoverColor: hoverColor1
                 lableColor: lableColor1
+                onClicked: mfunction()
             }
             spacing: 10
         }
@@ -328,6 +329,73 @@ Window {
             }
         }
     }
+
+    // Modal Window
+    Dialog {
+        id: modalWindow
+        modal: true
+        visible: false
+        anchors.centerIn: parent
+        width:500
+        Column{
+            RowLayout{
+                width: modalWindow.width
+                WindowBtn{
+                    id:backModalBtn
+                    imageUrl: "qrc:/images/back-svgrepo-com.svg";
+                    btnWidth: 40
+                    btnHeight: 40
+                    hoverColor: hoverColor1
+                    onClicked: console.log("back pressed ")
+                }
+                Label{
+                    text:"chat setting"
+                    Layout.fillWidth: true
+                }
+                WindowBtn{
+                    id:moreItemModal
+                    imageUrl: "qrc:/images/dots-vertical-svgrepo-com.svg";
+                    btnWidth: 40
+                    btnHeight: 40
+                    hoverColor: hoverColor1
+                    onClicked: console.log("more option pressed ")
+                }
+                WindowBtn{
+                    id:closeModalBtn
+                    imageUrl: "qrc:/images/close-svgrepo-com.svg";
+                    btnWidth: 40
+                    btnHeight: 40
+                    hoverColor: hoverColor1
+                    onClicked: modalWindow.close()
+                }
+            }
+
+            Column{
+                Label{
+                    text: "Themes"
+                }
+                Row{
+                    RadioButton {
+                        text: "yellow"
+                        checked: true
+                    }
+                    RadioButton {
+                        text: "red"
+                    }
+                    RadioButton {
+                        text: "blue"
+                    }
+                    RadioButton {
+                        text: "purple"
+                    }
+                    RadioButton {
+                        text: "white"
+                    }
+                }
+            }
+       }
+
+   }
 }
 
 
