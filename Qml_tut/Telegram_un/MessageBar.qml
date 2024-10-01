@@ -10,6 +10,7 @@ Item {
     property alias isCompactMode: compactMode.visible
     property string displayName: ""
 
+
     width: 300
     //height: 120
 

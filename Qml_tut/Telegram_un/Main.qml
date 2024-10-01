@@ -7,194 +7,97 @@ Window {
     width: 640
     height: 480
     visible: true
-    property alias listView: listView
+    //property alias listView: listView
     title: qsTr("Telegram")
     //flags: Qt.FramelessWindowHint
 
     property bool compactMode: appWindow.width > 500
-
+    property color hoverColor1: "lightblue"
+    property color lableColor1: "lightblue"
 
     Rectangle{
         id:actionbar
         width: parent.width
-        height: parent.height <= 640? 0.06 * parent.height: 0.03 * parent.height
+        height: actionBarRow.height
         color: "#d1ddff"
 
-        anchors{
-            top: parent.top
-            left: parent.left
-            right: parent.right
-        }
+        Row{
+            id: actionBarRow
+            layoutDirection: Qt.RightToLeft
+            anchors.right: parent.right
+            anchors.verticalCenter: parent.verticalCenter
+            spacing: 10
 
-        WindowBtn{
-            id:closeBtn
-            anchors{
-                top: parent.top
-                right: parent.right
+            WindowBtn{
+                id:closeBtn
+                imageUrl: "qrc:/images/close-svgrepo-com.svg";
+                btnWidth: 40
+                btnHeight: 40
+                hoverColor: hoverColor1
+                onClicked: Qt.quit()
+
             }
-            imageUrl: "qrc:/images/close-svgrepo-com.svg";
-            onClicked: Qt.quit()
-        }
 
-        WindowBtn{
-            id:maximizeBtn
-            anchors{
-                top: parent.top
-                right: closeBtn.right
-                rightMargin: 30
-            }
-            imageUrl: "qrc:/images/minimize-svgrepo-com.svg";
-            onClicked:{
-
-                if (appWindow.visibility === Window.Maximized) {
-                    appWindow.visibility = Window.Windowed;
-                } else {
-                    appWindow.visibility = Window.Maximized;
+            WindowBtn{
+                id:maximizeBtn
+                imageUrl: "qrc:/images/minimize-svgrepo-com.svg";
+                btnWidth: 40
+                btnHeight: 40
+                hoverColor: hoverColor1
+                onClicked:{
+                    if (appWindow.visibility === Window.Maximized) {
+                        appWindow.visibility = Window.Windowed;
+                    } else {
+                        appWindow.visibility = Window.Maximized;
+                    }
                 }
             }
-        }
 
-        WindowBtn{
-            id:hideBtn
-            anchors{
-                top: parent.top
-                right: maximizeBtn.right
-                rightMargin: 30
+            WindowBtn{
+                id:hideBtn
+                imageUrl: "qrc:/images/minus-svgrepo-com.svg";
+                btnWidth: 40
+                btnHeight: 40
+                hoverColor: hoverColor1
+                onClicked: {appWindow.visibility = Window.Minimized;}
             }
-            imageUrl: "qrc:/images/minus-svgrepo-com.svg";
-            onClicked: {appWindow.visibility = Window.Minimized;}
         }
     }
 
     Rectangle{
         id: sideBar
-        color: "#1f2940"
         width: appWindow.width <= 800 ? (appWindow.width / 10) :(appWindow.width / 20)
         anchors{
             top: actionbar.bottom
             left: parent.left
             bottom: parent.bottom
         }
+        color: "#1f2940"
+        ListModel {
+            id: menuList
+            ListElement { mlableName: ""; mimageUrl: "qrc:/images/hamburger-menu-svgrepo-com.svg" }
+            ListElement { mlableName: "All chats"; mimageUrl: "qrc:/images/folder-svgrepo-com.svg" }
+            ListElement { mlableName: "Private"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg" }
+            ListElement { mlableName: "Unread"; mimageUrl: "qrc:/images/message-square-list-svgrepo-com.svg" }
+            ListElement { mlableName: "Edit"; mimageUrl: "qrc:/images/edit-svgrepo-com.svg" }
+        }
 
-        Column{
-            topPadding: 15
-            width: parent.width
-            height: parent.height
-            spacing: 25
-            Rectangle{
-                id:menuItemF
-                color:"transparent"
-                width: parent.width
-                height: menu_unread.height
-                WindowBtn {
-                    id: menu_unread
-                    width: 40
-                    height: 40
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: parent.top
-                    imageUrl: "qrc:/images/hamburger-menu-svgrepo-com.svg"
-                }
-
+        ListView {
+            model: menuList
+            width:parent.width
+            height: parent.width
+            anchors.fill: parent
+            delegate: WindowBtn {
+                id: editBtn
+                anchors.horizontalCenter: parent.horizontalCenter
+                btnWidth: sideBar.width
+                btnHeight: sideBar.width
+                imageUrl: mimageUrl
+                lableName: mlableName  // Corrected from lableName to labelName
+                hoverColor: hoverColor1
+                lableColor: lableColor1
             }
-
-            Rectangle{
-                id:menuItemS
-                color:"transparent"
-                width: parent.width
-                height: menu_unread.height
-                IconImage {
-                    id: menu_unread_S
-                    width: 40
-                    height: 40
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: parent.top
-                    source: "qrc:/images/folder-svgrepo-com.svg"
-                }
-                Text {
-                    id: menuItemS1
-                    text: qsTr("All chats")
-                    color: "white"
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: menu_unread_S.bottom
-                }
-            }
-
-            Rectangle{
-                id:menuItem3
-                color:"transparent"
-                width: parent.width
-                height: menu_unread_3.height
-                IconImage {
-                    id: menu_unread_3
-                    width: 40
-                    height: 40
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: parent.top
-                    source: "qrc:/images/message-square-list-svgrepo-com.svg"
-                }
-                Text {
-                    id: menuItemS3
-                    text: qsTr("Private")
-                    color: "white"
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: menu_unread_3.bottom
-                }
-            }
-
-            Rectangle{
-                id:menuItem4
-                color:"transparent"
-                width: parent.width
-                height: menu_unread_4.height
-                IconImage {
-                    id: menu_unread_4
-                    width: 40
-                    height: 40
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: parent.top
-                    source: "qrc:/images/message-square-list-svgrepo-com.svg"
-                }
-                Text {
-                    id: menuItemS4
-                    text: qsTr("Unread")
-                    color: "white"
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: menu_unread_4.bottom
-                }
-            }
-
-            Rectangle{
-                id:menuItem5
-                color:"transparent"
-                width: parent.width
-                height: menu_unread_5.height
-                IconImage {
-                    id: menu_unread_5
-                    width: 40
-                    height: 40
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: parent.top
-                    source: "qrc:/images/edit-svgrepo-com.svg"
-                }
-                Text {
-                    id: menuItemS5
-                    text: qsTr("Edit")
-                    color: "white"
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.top: menu_unread_5.bottom
-                }
-            }
-
-
+            spacing: 10
         }
     }
 
@@ -413,7 +316,6 @@ Window {
                     delegate: fruitDelegate
                     spacing: 10
                 }
-
             }
 
             MessageEditor{
@@ -424,13 +326,8 @@ Window {
                 Layout.fillHeight: false
                 Layout.alignment: Qt.AlignBottom
             }
-
-
-
         }
-
     }
-
 }
 
 
