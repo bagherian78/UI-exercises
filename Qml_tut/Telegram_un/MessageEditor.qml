@@ -26,8 +26,10 @@ Item {
 
         // Attach Button (e.g., for attaching files)
         WindowBtn{
-            id: attachBtn
-            // anchors.fill: parent
+            id:attachBtn
+            btnWidth: rowLayout.height
+            btnHeight: btnWidth
+            hoverColor: "yellow"
             imageUrl: "qrc:/images/attach-svgrepo-com.svg";
         }
 
@@ -39,18 +41,21 @@ Item {
             wrapMode: TextArea.Wrap
         }
 
-
-
         // Emoji Button (e.g., for emoji picker)
         WindowBtn{
             id:emojuBtn
-            // anchors.fill: parent
+            btnWidth: rowLayout.height
+            btnHeight: btnWidth
+            hoverColor: "yellow"
             imageUrl: "qrc:/images/emoji-funny-circle-svgrepo-com.svg";
         }
 
+
         WindowBtn{
             id:recordOrSend
-            // anchors.fill: parent
+            btnWidth: rowLayout.height
+            btnHeight: btnWidth
+            hoverColor: "yellow"
             imageUrl: "qrc:/images/voice-fill-svgrepo-com.svg";
         }
 

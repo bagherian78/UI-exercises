@@ -33,10 +33,15 @@ Item {
             visible: isCompactMode
             width: (backBtn.width+avatar.width)
             Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft
-            WindowBtn {
-                id: backBtn
-                imageUrl: "qrc:/images/back-svgrepo-com.svg"
+
+            WindowBtn{
+                id:backBtn
+                btnWidth: (rowLayout.height*0.7)
+                btnHeight: btnWidth
+                hoverColor: "yellow"
+                imageUrl: "qrc:/images/back-svgrepo-com.svg";
             }
+
 
             // Avatar Section
             Rectangle {
@@ -93,24 +98,36 @@ Item {
             Layout.alignment: Qt.AlignRight
             spacing: 8
 
-            WindowBtn {
-                id: searchBtn
-                imageUrl: "qrc:/images/search-alt-2-svgrepo-com.svg"
+            WindowBtn{
+                id:searchBtn
+                btnWidth: (rowLayout.height*0.7)
+                btnHeight: btnWidth
+                hoverColor: "yellow"
+                imageUrl: "qrc:/images/search-alt-2-svgrepo-com.svg";
             }
 
-            WindowBtn {
-                id: callBtn
-                imageUrl: "qrc:/images/call-192-svgrepo-com.svg"
+            WindowBtn{
+                id:callBtn
+                btnWidth: (rowLayout.height*0.7)
+                btnHeight: btnWidth
+                hoverColor: "yellow"
+                imageUrl: "qrc:/images/call-192-svgrepo-com.svg";
             }
 
-            WindowBtn {
-                id: userInfo
-                imageUrl: "qrc:/images/panel-right-svgrepo-com.svg"
+            WindowBtn{
+                id:userInfo
+                btnWidth: (rowLayout.height*0.7)
+                btnHeight: btnWidth
+                hoverColor: "yellow"
+                imageUrl: "qrc:/images/panel-right-svgrepo-com.svg";
             }
 
-            WindowBtn {
-                id: moreItem
-                imageUrl: "qrc:/images/dots-vertical-svgrepo-com.svg"
+            WindowBtn{
+                id:moreItem
+                btnWidth: (rowLayout.height*0.7)
+                btnHeight: btnWidth
+                hoverColor: "yellow"
+                imageUrl: "qrc:/images/dots-vertical-svgrepo-com.svg";
             }
         }
     }

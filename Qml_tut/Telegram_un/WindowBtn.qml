@@ -8,6 +8,7 @@ Item {
     property alias btnHeight: windowBtn.height
     property string lableName: ""
     property color lableColor: "White"
+    property color iconColor: "purple"
 
     id: windowBtn
     width: 30
@@ -32,7 +33,7 @@ Item {
             width: rootRect.width*0.55
             height:rootRect.height*0.55
             source: ""
-            color: "purple"
+            color: iconColor
         }
 
         Text {

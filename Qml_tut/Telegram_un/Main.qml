@@ -14,6 +14,7 @@ Window {
     property bool compactMode: appWindow.width > 500
     property color hoverColor1: "lightblue"
     property color lableColor1: "lightblue"
+    property color iconColor1: "purple"
 
     Rectangle{
         id:actionbar
@@ -96,6 +97,7 @@ Window {
                 lableName: mlableName  // Corrected from lableName to labelName
                 hoverColor: hoverColor1
                 lableColor: lableColor1
+                iconColor: iconColor1
                 onClicked: mfunction()
             }
             spacing: 10
@@ -178,16 +180,19 @@ Window {
                         }
                     }
 
-                    IconImage{
-                        width:rectangle.height
-                        height:rectangle.height
+                    WindowBtn{
+                        id:searchBoxImage
+                        btnWidth: (rectangle.height*1.4)
+                        btnHeight: (rectangle.height*1.4)
+                        hoverColor: "transparent"
+                        onClicked: console.log("search ")
                         anchors{
                             right: parent.right
                             top: parent.top
                             bottom: parent.bottom
                             rightMargin: 10
                         }
-                        source: "qrc:/images/search-alt-2-svgrepo-com.svg"
+                        imageUrl: "qrc:/images/search-alt-2-svgrepo-com.svg"
                     }
                 }
             }
@@ -255,6 +260,7 @@ Window {
         ColumnLayout{
             id:messageDialog
             SplitView.preferredWidth: Math.floor(2*appWindow.width/3)
+            SplitView.minimumWidth: 250
             SplitView.fillWidth: true
             SplitView.fillHeight: true
             visible: compactMode
@@ -375,21 +381,62 @@ Window {
                     text: "Themes"
                 }
                 Row{
-                    RadioButton {
-                        text: "yellow"
-                        checked: true
+                    spacing:10
+                    ButtonColor{
+                        color: "#5288c1"
+                        onClicked: if(checked){
+                                       lableColor1="#5288c1"
+                                       iconColor1 ="#5288c1"
+                        }
                     }
-                    RadioButton {
-                        text: "red"
+                    ButtonColor{
+                        color:"#58bfe8"
+                        onClicked: if(checked){
+                                       lableColor1="#58bfe8"
+                                       iconColor1 ="#58bfe8"
+                        }
                     }
-                    RadioButton {
-                        text: "blue"
+                    ButtonColor{
+                        color:"#466f42"
+                        onClicked: if(checked){
+                                       lableColor1="#466f42"
+                                       iconColor1 ="#466f42"
+                        }
                     }
-                    RadioButton {
-                        text: "purple"
+                    ButtonColor{
+                        color:"#aa6084"
+                        onClicked: if(checked){
+                                       lableColor1="#aa6084"
+                                       iconColor1 ="#aa6084"
+                        }
                     }
-                    RadioButton {
-                        text: "white"
+                    ButtonColor{
+                        color:"#a46d3c"
+                        onClicked: if(checked){
+                                       lableColor1="#a46d3c"
+                                       iconColor1 ="#a46d3c"
+                        }
+                    }
+                    ButtonColor{
+                        color:"#917bbd"
+                        onClicked: if(checked){
+                                       lableColor1="#917bbd"
+                                       iconColor1 ="#917bbd"
+                        }
+                    }
+                    ButtonColor{
+                        color:"#ab5149"
+                        onClicked: if(checked){
+                                       lableColor1="#ab5149"
+                                       iconColor1 ="#ab5149"
+                        }
+                    }
+                    ButtonColor{
+                        color:"#697b97"
+                        onClicked: if(checked){
+                                       lableColor1="#697b97"
+                                       iconColor1 ="#697b97"
+                        }
                     }
                 }
             }
